@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/1feb6f56bc1f877024b1/maintainability)](https://codeclimate.com/github/matthewturner/alexa-salus-it500/maintainability) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) [![Codeship Status for matthewturner/alexa-salus-it500](https://app.codeship.com/projects/1ee5b9e0-3ba0-0137-f593-02e93a421fb3/status?branch=master)](https://app.codeship.com/projects/334358)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c456d5f04d612ce8c6fe/maintainability)](https://codeclimate.com/github/matthewturner/smartheat-alexa-smarthome-skill/maintainability) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) [![Codeship Status for matthewturner/smartheat-alexa-smarthome-skill](https://app.codeship.com/projects/4d2424b0-e4f8-0137-660f-0ac16517213a/status?branch=master)](https://app.codeship.com/projects/373417)
 
 # alexa-salus-it500
 

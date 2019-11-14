@@ -10,6 +10,10 @@ export USERNAME=
 export PASSWORD=
 export TARGET_TEMPERATURE=
 export THERMOSTAT_TYPE=
+export HOST=
+export PORT=
+export MODEL=
+export PIN=
 
 # add these extra ones to test the command:
 #    "Turn on for 1 hour"
@@ -21,4 +25,4 @@ export DURATION=PT1H
 export HOLD_STRATEGY=aws
 export THERMOSTAT_REPOSITORY=aws
 
-node ./src/aws/test.js
+node ./scripts/test.js

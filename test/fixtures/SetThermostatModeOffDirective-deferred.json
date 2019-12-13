@@ -12,6 +12,7 @@
             "userId": "user123"
         },
         "payload": {
+            "source": "callback",
             "thermostatMode": {
                 "value": "OFF"
             }

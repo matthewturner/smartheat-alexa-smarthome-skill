@@ -22,7 +22,7 @@ class Handler {
         const userId = profile.user_id;
         const shortUserId = helpers.truncateUserId(userId);
         this._logger.prefix = shortUserId;
-        let source = 'user';
+        const source = event.directive.payload.source || 'user';
         const context = {
             userId: userId,
             shortUserId: shortUserId,

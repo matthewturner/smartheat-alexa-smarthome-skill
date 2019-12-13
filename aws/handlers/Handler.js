@@ -22,7 +22,7 @@ class Handler {
         const userId = profile.user_id;
         const shortUserId = helpers.truncateUserId(userId);
         this._logger.prefix = shortUserId;
-        const source = event.directive.payload.source || 'user';
+        const source = this.retrieveSource(event);
         const context = {
             userId: userId,
             shortUserId: shortUserId,
@@ -57,6 +57,13 @@ class Handler {
             return new ProfileGateway();
         }
         return new MockProfileGateway();
+    }
+
+    retrieveSource(event) {
+        if (event.directive.payload && event.directive.payload.source) {
+            return event.directive.payload.source;
+        }
+        return 'user';
     }
 
     async retrieveProfile(event) {

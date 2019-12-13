@@ -9,7 +9,7 @@ const {
     MockProfileGateway
 } = require('smartheat-aws/aws/ProfileGateway');
 const helpers = require('smartheat-aws/aws/helpers');
-const Factory = require('smartheat-clients/clients/Factory');
+const Factory = require('smartheat-core/core/Factory');
 const AlexaResponseBuilder = require('../AlexaResponseBuilder');
 
 class Handler {

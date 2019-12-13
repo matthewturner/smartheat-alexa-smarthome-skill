@@ -155,6 +155,27 @@ describe('SmartHome Lambda', async () => {
         });
     });
 
+    describe('Deferred SetThermostatMode Directive', async () => {
+        it('turns the heating off', async () => {
+            const target = createTarget();
+
+            const request = JSON.parse(await fs.readFile('./test/fixtures/SetThermostatModeOffDirective-deferred.json'));
+            const context = {};
+
+            const handler = target.object().handler;
+            const actual = await handler(request, context);
+
+            actual.event.header.messageId = 'messageId123';
+            actual.context.properties[0].timeOfSample = '2019-09-03T10:45:31.258Z';
+            actual.context.properties[1].timeOfSample = '2019-09-03T10:45:31.258Z';
+            actual.context.properties[2].timeOfSample = '2019-09-03T10:45:31.258Z';
+
+            const expected = JSON.parse(await fs.readFile('./test/fixtures/SetThermostatModeOffResponse-deferred.json'));
+
+            expect(actual).to.deep.include(expected);
+        });
+    });
+
     describe('Unknown Directive', async () => {
         it('reports the error', async () => {
             const target = createTarget();

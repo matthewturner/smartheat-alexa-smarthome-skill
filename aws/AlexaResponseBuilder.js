@@ -29,7 +29,7 @@ class AlexaResponseBuilder {
             correlationToken: correlationToken
         };
 
-        if (event.directive.endpoint) {
+        if (event.directive.endpoint && event.directive.endpoint.scope) {
             this._options.endpointId = event.directive.endpoint.endpointId;
             this._options.token = event.directive.endpoint.scope.token;
         }
@@ -81,7 +81,7 @@ class AlexaResponseBuilder {
             return this.errorResponseFrom(this._error);
         }
 
-        let response = new AlexaResponse(this._options);
+        const response = new AlexaResponse(this._options);
 
         this.addThermostatDetailsIfRequired(response,
             this._thermostatDetails);
@@ -95,6 +95,10 @@ class AlexaResponseBuilder {
             this._currentTemperature);
 
         this.addModePropertyIfRequired(response, this._mode);
+
+        if (this._event.directive.endpoint && this._event.directive.endpoint.userId) {
+            response.event.endpoint = { userId: this._event.directive.endpoint.userId };
+        }
 
         this._logger.debug('Response details:');
         this._logger.debug(JSON.stringify(response));

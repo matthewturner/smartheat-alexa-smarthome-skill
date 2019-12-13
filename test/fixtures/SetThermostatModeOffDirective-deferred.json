@@ -1,0 +1,20 @@
+{
+    "directive": {
+        "duration": 3600,
+        "header": {
+            "namespace": "Alexa.ThermostatController",
+            "name": "SetThermostatMode",
+            "payloadVersion": "3",
+            "messageId": "501154ef-297c-4924-920e-225d750706fb",
+            "correlationToken": "correlation123"
+        },
+        "endpoint": {
+            "userId": "user123"
+        },
+        "payload": {
+            "thermostatMode": {
+                "value": "OFF"
+            }
+        }
+    }
+}

@@ -4,6 +4,10 @@
 
 An Alexa App (skill) to control older heating systems which are not integrated with Alexa.
 
+## Utterances
+
+The Smarthome API supports many of the common utterances around controlling heating systems. A full list can be found [here](https://developer.amazon.com/en-US/docs/alexa/device-apis/alexa-thermostatcontroller.html#utterances).
+
 ## Supported Devices
 
 ### Salus IT500

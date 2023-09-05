@@ -1,4 +1,4 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/c456d5f04d612ce8c6fe/maintainability)](https://codeclimate.com/github/matthewturner/smartheat-alexa-smarthome-skill/maintainability) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) [![Action Status](https://github.com/matthewturner/smartheat-alexa-smarthome-skill/workflows/Node%20CI/badge.svg)](https://github.com/matthewturner/smartheat-alexa-smarthome-skill/actions)
+[![Node.js CI](https://github.com/matthewturner/smartheat-alexa-smarthome-skill/workflows/Node%20CI/badge.svg)](https://github.com/matthewturner/smartheat-alexa-smarthome-skill/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/c456d5f04d612ce8c6fe/maintainability)](https://codeclimate.com/github/matthewturner/smartheat-alexa-smarthome-skill/maintainability) [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
 
 # SmartHeat Legacy Thermostat Skill
 

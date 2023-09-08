@@ -13,7 +13,7 @@
 
 'use strict';
 
-const uuid = require('uuid');
+const { v4: uuidv4 } = require('uuid');
 
 /**
  * Helper class to generate an AlexaResponse.
@@ -66,7 +66,7 @@ class AlexaResponse {
             'header': {
                 'namespace': this.checkValue(opts.namespace, 'Alexa'),
                 'name': this.checkValue(opts.name, 'Response'),
-                'messageId': this.checkValue(opts.messageId, uuid()),
+                'messageId': this.checkValue(opts.messageId, uuidv4()),
                 'correlationToken': this.checkValue(opts.correlationToken, undefined),
                 'payloadVersion': this.checkValue(opts.payloadVersion, '3')
             },

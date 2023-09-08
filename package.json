@@ -29,7 +29,7 @@
     "@hapi/cryptiles": "^4.1.3",
     "@hapi/hoek": "^9.3.0",
     "@matthewturner/durationjs": "^1.2.0",
-    "@matthewturner/smartheat-aws": "^1.1.0",
+    "@matthewturner/smartheat-aws": "^1.1.5",
     "@matthewturner/smartheat-clients": "^1.3.0",
     "@matthewturner/smartheat-core": "^v1.1.0",
     "JSON": "^1.0.0",

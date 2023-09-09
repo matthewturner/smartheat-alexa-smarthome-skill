@@ -4,9 +4,13 @@ const Logger = require('@matthewturner/smartheat-core/core/Logger');
 const HandlerRegistry = require('./HandlerRegistry');
 
 const logger = new Logger(process.env.LOG_LEVEL || Logger.DEBUG);
+const { version } = require('../package.json');
 
 exports.handler = async (ev, context) => {
     logger.level = process.env.LOG_LEVEL || Logger.DEBUG;
+
+    logger.debug(`SmartHome Version: ${version}`);
+
     logEntry(ev, context);
     const event = extractEvent(ev);
 

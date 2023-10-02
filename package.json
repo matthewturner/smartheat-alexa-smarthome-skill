@@ -29,7 +29,7 @@
     "@matthewturner/smartheat-aws": "^1.1.6",
     "@matthewturner/smartheat-clients": "^1.4.2",
     "@matthewturner/smartheat-core": "^1.2.2",
-    "axios": "^1.5.0",
+    "axios": "^1.5.1",
     "extend": ">=3.0.2",
     "fs": "^0.0.2",
     "lodash": "^4.17.21",

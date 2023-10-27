@@ -26,9 +26,9 @@
   },
   "dependencies": {
     "@matthewturner/durationjs": "^1.2.0",
-    "@matthewturner/smartheat-aws": "^1.1.6",
-    "@matthewturner/smartheat-clients": "^1.4.2",
-    "@matthewturner/smartheat-core": "^1.2.2",
+    "@matthewturner/smartheat-aws": "^1.1.11",
+    "@matthewturner/smartheat-clients": "^1.4.3",
+    "@matthewturner/smartheat-core": "^1.2.4",
     "axios": "^1.5.1",
     "extend": ">=3.0.2",
     "fs": "^0.0.2",

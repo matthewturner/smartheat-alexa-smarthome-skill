@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "ajv": "^8.12.0",
-    "aws-sdk": "^2.1483.0",
+    "aws-sdk": "^2.1488.0",
     "chai": "^4.3.10",
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.53.0",
